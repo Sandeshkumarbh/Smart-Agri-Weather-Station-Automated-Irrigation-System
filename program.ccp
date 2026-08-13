@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL3P2TwwE9j"
+#define BLYNK_TEMPLATE_ID "YOUR_TEMPLATE_ID"
 #define BLYNK_TEMPLATE_NAME "Smart Agriculture"
-#define BLYNK_AUTH_TOKEN "yvmaOED933F4Ii0EhVFIgIhDM-Qm6KXV"
+#define BLYNK_AUTH_TOKEN "YOUR_AUTH_TOKEN"
 
 #include <WiFi.h>
 #include <BlynkSimpleEsp32.h>
