@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "author": "Sandesh Kumar BH",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 28.8,
+      "left": 139.24,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay1",
+      "top": -86.2,
+      "left": -57.6,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gas-sensor",
+      "id": "gas1",
+      "top": 50.7,
+      "left": -194.6,
+      "attrs": {}
+    },
+    {
+      "type": "board-bmp180",
+      "id": "bmp1",
+      "top": 159.04,
+      "left": -153.34,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": 313.6,
+      "left": 351.2,
+      "attrs": {
+        "pins": "i2c"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": -135.7,
+      "left": 163,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-ds18b20",
+      "id": "temp1",
+      "top": -77.93,
+      "left": 311.28,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 60.6,
+      "left": 392.7,
+      "rotate": 90,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "relay1:IN",
+      "esp:26",
+      "green",
+      [
+        "v79.6",
+        "h3.4",
+        "v-9.6"
+      ]
+    ],
+    [
+      "relay1:VCC",
+      "esp:5V",
+      "red",
+      [
+        "v223.6",
+        "h147.6"
+      ]
+    ],
+    [
+      "relay1:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "gas1:AOUT",
+      "esp:34",
+      "green",
+      [
+        "h57.6",
+        "v9.6"
+      ]
+    ],
+    [
+      "gas1:VCC",
+      "esp:5V",
+      "red",
+      [
+        "h48",
+        "v133.5"
+      ]
+    ],
+    [
+      "gas1:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "h134.4",
+        "v76"
+      ]
+    ],
+    [
+      "bmp1:VCC",
+      "esp:5V",
+      "red",
+      [
+        "h115.2",
+        "v86.4"
+      ]
+    ],
+    [
+      "bmp1:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "h76.8",
+        "v9.79"
+      ]
+    ],
+    [
+      "pot1:SIG",
+      "esp:35",
+      "green",
+      [
+        "v38.4",
+        "h-86.8",
+        "v0"
+      ]
+    ],
+    [
+      "pot1:VCC",
+      "esp:5V",
+      "red",
+      [
+        "v19.2",
+        "h-116",
+        "v259.2"
+      ]
+    ],
+    [
+      "pot1:GND",
+      "temp1:GND",
+      "black",
+      [
+        "v38.4",
+        "h124.8"
+      ]
+    ],
+    [
+      "dht1:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "h-115.2",
+        "v124.8",
+        "h-134.4",
+        "v-9.6"
+      ]
+    ],
+    [
+      "temp1:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "v38.4",
+        "h-240",
+        "v172.8"
+      ]
+    ],
+    [
+      "temp1:DQ",
+      "esp:18",
+      "green",
+      [
+        "v163.2",
+        "h-86.4"
+      ]
+    ],
+    [
+      "temp1:VCC",
+      "esp:5V",
+      "red",
+      [
+        "v28.8",
+        "h-240",
+        "v230.4"
+      ]
+    ],
+    [
+      "dht1:VCC",
+      "esp:5V",
+      "red",
+      [
+        "h-115.2",
+        "v163.2",
+        "h-105.6"
+      ]
+    ],
+    [
+      "dht1:SDA",
+      "esp:4",
+      "green",
+      [
+        "h-105.6",
+        "v48.1"
+      ]
+    ],
+    [
+      "bmp1:SCL",
+      "esp:22",
+      "green",
+      [
+        "h48",
+        "v67.39",
+        "h307.2",
+        "v-172.8"
+      ]
+    ],
+    [
+      "bmp1:SDA",
+      "esp:21",
+      "green",
+      [
+        "h28.8",
+        "v67.39",
+        "h316.8",
+        "v19.2"
+      ]
+    ],
+    [
+      "lcd1:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "h-28.8",
+        "v-163.2",
+        "h-211.2"
+      ]
+    ],
+    [
+      "lcd1:VCC",
+      "esp:5V",
+      "red",
+      [
+        "h-211.2",
+        "v-124.7"
+      ]
+    ],
+    [
+      "lcd1:SDA",
+      "esp:21",
+      "green",
+      [
+        "h-76.8",
+        "v-211"
+      ]
+    ],
+    [
+      "lcd1:SCL",
+      "esp:22",
+      "green",
+      [
+        "h-76.8",
+        "v-210.9"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}
