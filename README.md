@@ -205,9 +205,8 @@ Sandesh Kumar BH
 ECE Student | Embedded Systems & IoT Enthusiast
 
 ## Circuit Diagram
+<img width="1600" height="950" alt="WhatsApp Image 2026-08-13 at 11 40 35 PM" src="https://github.com/user-attachments/assets/a72c8d46-4dfc-419d-a312-a42986c126ac" />
 
-![Smart Agriculture Circuit](circuit.png)
-<img width="1600" height="950" alt="WhatsApp Image 2026-08-13 at 11 40 13 PM" src="https://github.com/user-attachments/assets/39a293c2-6318-4dd0-8c95-700f3ec1a71c" />
-
+Blynk console DashBoard
 <img width="1600" height="950" alt="WhatsApp Image 2026-08-13 at 11 40 13 PM" src="https://github.com/user-attachments/assets/e1aac065-af42-41dd-9625-a9ec7136485e" />
 
